@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_40dp"
+        android:layout_marginLeft="@dimen/_40dp"
+        android:layout_marginTop="@dimen/_60dp"
+        android:text="@string/signin"
+        android:textAllCaps="true"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/font_30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutMobileNumber"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_marginStart="@dimen/_20dp"
+        android:layout_marginLeft="@dimen/_20dp"
+        android:layout_marginTop="@dimen/_60dp"
+        android:layout_marginEnd="@dimen/_20dp"
+        android:layout_marginRight="@dimen/_20dp"
+        android:hint="@string/entermobile"
+        app:hintTextColor="@color/customerdatecolor"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSignIn">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textViewMobileNumber"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/mobileno" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textViewSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_margin="@dimen/_20dp"
+        android:text="@string/signin"
+        android:gravity="center"
+        android:textSize="@dimen/font_24sp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutMobileNumber"
+        android:background="@color/red"/>
+
+    <TextView
+        android:id="@+id/textViewDonthaveAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/donthaveaccount"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSubmit"
+        android:layout_marginTop="@dimen/_30dp"
+        android:textSize="@dimen/font_eighteen" />
+
+    <TextView
+        android:id="@+id/textViewSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSubmit"
+        android:text="@string/signup"
+        android:layout_marginTop="@dimen/_30dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewDonthaveAccount"
+        android:textSize="@dimen/font_eighteen"
+        android:layout_marginStart="@dimen/_4dp"
+        android:layout_marginLeft="@dimen/_4dp"
+        android:textColor="@color/red" />
+
+
+    <ImageView
+        android:id="@+id/imageViewBackgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_250dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/images"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

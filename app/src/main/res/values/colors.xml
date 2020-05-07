@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#F20000</color>
+    <color name="green">#04C100</color>
+
+    <!-- Secondary theme colors -->
+    <color name="tealDark">#0094DE</color>
+    <color name="tealLight">#9FDAF7</color>
+    <color name="link_blue">#0000EE</color>
+    <color name="blue_color">#4BA5E8</color>
+
+    <!-- other -->
+    <color name="red2">#fc8b8d</color>
+    <color name="red">#F20000</color>
+    <color name="grey1">#f2f2f2</color>
+    <color name="grey2">#c4c4c4</color>
+    <color name="grey3">#a8a8a8</color>
+    <color name="grey4">#7d7d7d</color>
+    <color name="grey5">#5c5c5c</color>
+
+    <color name="default_background_color">#EEEEEE</color>
+
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+
+    <color name="grey6">#F1F1F1</color>
+    <color name="voilet_color">#AE0069</color>
+    <color name="navigationn_selctor">#FF390E</color>
+    <color name="text_color">#1E1E1E</color>
+    <color name="text_color1">#949494</color>
+    <color name="text_color_grey">#767676</color>
+    <color name="text_low_select_color">#757575</color>
+    <color name="totalratingcolor">#888888</color>
+    <color name="customerratingcolor">#404040</color>
+    <color name="customerdatecolor">#757575</color>
+    <color name="deactivatebuttoncolor">#747474</color>
+    <color name="dividercolor">#E7E7E7</color>
+    <color name="grey_light_color">#808080</color>
+    <color name="yellow_color">#FDAA0B</color>
+    <color name="background_color">#E5E5E5</color>
+    <color name="text_color_light_grey">#5F5F5F</color>
+    <color name="background_grey">#EFEFEF</color>
+    <color name="light_green_color">#265C8E</color>
+    <color name="light_grey_color">#858585</color>
+
+</resources>

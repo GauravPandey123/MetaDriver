@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textViewSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_30dp"
+            android:text="@string/signup"
+            android:textAllCaps="true"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/font_24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/imageViewSignUp"
+            android:layout_width="@dimen/_120dp"
+            android:layout_height="@dimen/_120dp"
+            android:layout_margin="@dimen/_20dp"
+            android:background="@drawable/profileimage"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewSignUp" />
+
+        <TextView
+            android:id="@+id/textViewAddPicture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10dp"
+            android:text="@string/add_profile_picture"
+            android:textSize="@dimen/font_eighteen"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewSignUp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutMetaSignUpName"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_marginStart="@dimen/_20dp"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:layout_marginTop="@dimen/_40dp"
+            android:layout_marginEnd="@dimen/_20dp"
+            android:layout_marginRight="@dimen/_20dp"
+            android:hint="@string/name"
+            app:layout_constraintTop_toBottomOf="@+id/textViewAddPicture">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputEditMetaSignUpName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/font_20sp" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutMetaSignUpEmail"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_marginStart="@dimen/_20dp"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_marginEnd="@dimen/_20dp"
+            android:layout_marginRight="@dimen/_20dp"
+            android:hint="@string/email"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutMetaSignUpName">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputEditMetaSignUpEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/font_20sp" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutSignUpMobile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_20dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutMetaSignUpEmail">
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputCountrySignUPMobileNo"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:hint="@string/enmobileno">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textInputLayoutSignUpCountryMobileNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawablePadding="@dimen/_10dp"
+                    android:inputType="phone"
+                    android:padding="@dimen/_10dp"
+                    android:textSize="@dimen/font_sixteen" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutMetaSignUpPassword"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_marginStart="@dimen/_20dp"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:layout_marginEnd="@dimen/_20dp"
+            android:layout_marginRight="@dimen/_20dp"
+            android:layout_marginTop="@dimen/_20dp"
+            android:hint="@string/enteryourpassowrd"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayoutSignUpMobile">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputEditMetaSignUpPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/font_20sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/textViewSignUpNow"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_margin="@dimen/_20dp"
+            android:background="@color/red"
+            android:gravity="center"
+            android:text="@string/signupnow"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_20sp"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutMetaSignUpPassword" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/textViewSignUpNow">
+
+            <TextView
+                android:id="@+id/textViewAlreadyRegistered"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/_20dp"
+                android:layout_marginBottom="@dimen/_20dp"
+                android:text="@string/alreadyregistered"
+                android:textSize="@dimen/font_20sp" />
+
+            <TextView
+                android:id="@+id/textViewSignupsignin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20dp"
+                android:layout_marginBottom="@dimen/_20dp"
+                android:textSize="@dimen/font_20sp"
+                android:textColor="@color/red"
+                android:layout_marginRight="@dimen/_2dp"
+                android:layout_marginStart="@dimen/_2dp"
+                android:layout_toEndOf="@+id/textViewAlreadyRegistered"
+                android:text="@string/siginin"
+                android:layout_toRightOf="@+id/textViewAlreadyRegistered"
+                android:layout_marginEnd="@dimen/_2dp" />
+
+        </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.core.widget.NestedScrollView>
