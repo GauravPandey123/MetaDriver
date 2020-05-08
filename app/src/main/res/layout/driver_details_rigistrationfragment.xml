@@ -8,28 +8,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/textViewSignUp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/_30dp"
-            android:text="@string/signup"
-            android:textAllCaps="true"
-            android:textColor="@color/text_color"
-            android:textSize="@dimen/font_24sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
 
         <ImageView
             android:id="@+id/imageViewSignUp"
             android:layout_width="@dimen/_120dp"
             android:layout_height="@dimen/_120dp"
-            android:layout_margin="@dimen/_20dp"
+            android:layout_margin="@dimen/_30dp"
             android:background="@drawable/ellipse"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textViewSignUp" />
+            app:layout_constraintTop_toTopOf="parent" />
 
 
         <com.google.android.material.textfield.TextInputLayout
@@ -64,7 +52,7 @@
             android:layout_marginTop="@dimen/_20dp"
             android:layout_marginEnd="@dimen/_20dp"
             android:layout_marginRight="@dimen/_20dp"
-            android:hint="@string/email"
+            android:hint="@string/enterdate"
             app:layout_constraintTop_toBottomOf="@+id/textInputLayoutMetaSignUpName">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -87,7 +75,6 @@
             app:layout_constraintTop_toBottomOf="@+id/textInputLayoutMetaSignUpEmail">
 
 
-
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/textInputCountrySignUPMobileNo"
                 android:layout_width="match_parent"
@@ -98,9 +85,10 @@
                     android:id="@+id/textInputLayoutSignUpCountryMobileNo"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:drawableEnd="@drawable/ic_dob"
+                    android:drawableRight="@drawable/ic_dob"
                     android:drawablePadding="@dimen/_10dp"
                     android:inputType="phone"
-                    android:padding="@dimen/_10dp"
                     android:textSize="@dimen/font_sixteen" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -108,19 +96,85 @@
         </LinearLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textInputLayoutMetaSignUpPassword"
+            android:id="@+id/textInputLayoutMetaSignUpStreet"
             android:layout_width="match_parent"
             android:layout_height="?actionBarSize"
             android:layout_marginStart="@dimen/_20dp"
             android:layout_marginLeft="@dimen/_20dp"
+            android:layout_marginTop="@dimen/_20dp"
             android:layout_marginEnd="@dimen/_20dp"
             android:layout_marginRight="@dimen/_20dp"
-            android:layout_marginTop="@dimen/_20dp"
-            android:hint="@string/enteryourpassowrd"
+            android:hint="@string/street"
             app:layout_constraintTop_toBottomOf="@+id/linearLayoutSignUpMobile">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/textInputEditMetaSignUpPassword"
+                android:id="@+id/textInputEditMetaSignUpStreet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/font_20sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutMetaColonyName"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_marginStart="@dimen/_20dp"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_marginEnd="@dimen/_20dp"
+            android:layout_marginRight="@dimen/_20dp"
+            android:hint="@string/colonyandarea"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutMetaSignUpStreet">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputEditMetaColonyName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/font_20sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutMetaState"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_marginStart="@dimen/_20dp"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_marginEnd="@dimen/_20dp"
+            android:layout_marginRight="@dimen/_20dp"
+            android:hint="@string/state"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutMetaColonyName">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputEditMetaState"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/font_20sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutMetaPostalCode"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_marginStart="@dimen/_20dp"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_marginEnd="@dimen/_20dp"
+            android:layout_marginRight="@dimen/_20dp"
+            android:hint="@string/postalcode"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutMetaState">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputEditMetaPostalCode"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
@@ -130,47 +184,19 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
-            android:id="@+id/textViewSignUpNow"
+            android:id="@+id/textViewDriverNext"
             android:layout_width="match_parent"
             android:layout_height="?actionBarSize"
-            android:layout_margin="@dimen/_20dp"
+            android:layout_margin="@dimen/_10dp"
             android:background="@color/red"
             android:gravity="center"
-            android:text="@string/signupnow"
+            android:text="@string/next"
             android:textColor="@color/white"
             android:textSize="@dimen/font_20sp"
-            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutMetaSignUpPassword" />
+            app:layout_constraintBottom_toBottomOf="parent" />
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@+id/textViewSignUpNow">
 
-            <TextView
-                android:id="@+id/textViewAlreadyRegistered"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:layout_marginTop="@dimen/_20dp"
-                android:layout_marginBottom="@dimen/_20dp"
-                android:text="@string/alreadyregistered"
-                android:textSize="@dimen/font_sixteen" />
 
-            <TextView
-                android:id="@+id/textViewSignupsignin"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_20dp"
-                android:layout_marginBottom="@dimen/_20dp"
-                android:textSize="@dimen/font_sixteen"                android:textColor="@color/red"
-                android:layout_marginRight="@dimen/_2dp"
-                android:layout_marginStart="@dimen/_2dp"
-                android:layout_toEndOf="@+id/textViewAlreadyRegistered"
-                android:text="@string/siginin"
-                android:layout_toRightOf="@+id/textViewAlreadyRegistered"
-                android:layout_marginEnd="@dimen/_2dp" />
-
-        </RelativeLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 

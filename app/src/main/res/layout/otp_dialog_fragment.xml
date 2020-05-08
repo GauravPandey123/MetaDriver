@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewVerifyMobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_20dp"
+        android:text="@string/verifymobile"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/font_24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewOtpSentTO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16dp"
+        android:text="@string/enterotpsent"
+        android:textColor="@color/light_grey_color"
+        android:textSize="@dimen/font_eighteen"
+        app:layout_constraintHorizontal_bias="0.291"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewVerifyMobile" />
+
+    <TextView
+        android:id="@+id/textViewMobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_4dp"
+        android:layout_marginLeft="@dimen/_4dp"
+        android:layout_marginTop="@dimen/_16dp"
+        android:text="@string/mobileno"
+        android:textColor="@color/red"
+        android:textSize="@dimen/font_eighteen"
+        app:layout_constraintStart_toEndOf="@+id/textViewOtpSentTO"
+        app:layout_constraintTop_toBottomOf="@+id/textViewVerifyMobile" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutOtp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_40dp"
+        android:layout_marginBottom="@dimen/_40dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMobile">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/otp_first_char"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/grey_rectangle"
+            android:inputType="number" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/otp_sec_char"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/grey_rectangle"
+            android:inputType="number" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/otp_third_char"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/grey_rectangle"
+            android:inputType="number" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/otp_four_char"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/grey_rectangle"
+            android:inputType="number" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewVerifyOtp"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_margin="@dimen/_20dp"
+        android:background="@color/red"
+        android:gravity="center"
+        android:text="@string/verifyotp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_20sp"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutOtp" />
+
+    <TextView
+        android:id="@+id/textViewResendOtp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_40dp"
+        android:lineSpacingExtra="@dimen/_2dp"
+        android:text="@string/resendotp"
+        android:textColor="@color/light_grey_color"
+        android:textSize="@dimen/font_20sp"
+        app:layout_constraintHorizontal_bias="0.423"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewVerifyOtp" />
+
+    <TextView
+        android:id="@+id/textViewOtpTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_40dp"
+        android:layout_marginLeft="@dimen/_4dp"
+        android:text="@string/time"
+        android:textColor="@color/red"
+        android:textSize="@dimen/font_20sp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewVerifyOtp"
+        app:layout_constraintStart_toEndOf="@+id/textViewResendOtp"
+        android:layout_marginStart="@dimen/_4dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

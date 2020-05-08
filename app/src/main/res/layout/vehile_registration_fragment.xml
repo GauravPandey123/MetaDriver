@@ -1,6 +1,167 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/imageViewVechileImage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200dp"
+        android:layout_margin="@dimen/_10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/vech_image"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewUploadImage"
+        android:layout_width="@dimen/_40dp"
+        android:layout_height="@dimen/_40dp"
+        android:layout_margin="@dimen/_10dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_upload_image"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewVechileImage" />
+
+    <ImageView
+        android:id="@+id/imageViewDeleteImage"
+        android:layout_width="@dimen/_40dp"
+        android:layout_height="@dimen/_40dp"
+        android:layout_margin="@dimen/_10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginRight="76dp"
+        android:src="@drawable/ic_delete_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewVechileImage" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutMetaSignUpPassword"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_margin="@dimen/_10dp"
+        android:hint="@string/carbrand"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewDeleteImage">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEditMetaSignUpPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/ic_drop_down"
+            android:drawableRight="@drawable/ic_drop_down"
+            android:inputType="text"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/font_sixteen" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutMetaCarModel"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_margin="@dimen/_10dp"
+        android:hint="@string/carmodel"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutMetaSignUpPassword">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEditMetaCarModel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/ic_drop_down"
+            android:drawableRight="@drawable/ic_drop_down"
+            android:inputType="text"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/font_sixteen" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutMetaCarColor"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_margin="@dimen/_10dp"
+        android:hint="@string/color"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutMetaCarModel">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEditMetaColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/font_sixteen" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutMetaCarRegistration"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_margin="@dimen/_10dp"
+        android:hint="@string/carregistrationnuber"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutMetaCarColor">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEditMetaCarRegistration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/font_sixteen" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutMetaCarFuelType"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_margin="@dimen/_10dp"
+        android:hint="@string/fueltype"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutMetaCarRegistration">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textEditTextMetaCarFuelType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/font_sixteen" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutMetaCarDateofRegistration"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_margin="@dimen/_10dp"
+        android:hint="@string/dateofregistration"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutMetaCarFuelType">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textEditTextMetaCarDateofRegistration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/ic_dob"
+            android:drawableRight="@drawable/ic_dob"
+            android:inputType="text"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/font_sixteen" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textViewVechileNext"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_margin="@dimen/_10dp"
+        android:background="@color/red"
+        android:gravity="center"
+        android:text="@string/next"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_20sp"
+        app:layout_constraintBottom_toBottomOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

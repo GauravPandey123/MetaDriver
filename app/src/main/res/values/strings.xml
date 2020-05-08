@@ -26,4 +26,24 @@
     <string name="alreadyregistered">Are you Already Registered</string>
     <string name="siginin">Signin</string>
     <string name="login">Login</string>
+    <string name="enterdate">Enter Date Of Birth</string>
+    <string name="street">Street</string>
+    <string name="colonyandarea">Colony/Area</string>
+    <string name="postalcode">PostalCode</string>
+    <string name="state">State</string>
+    <string name="carbrand">CardBrand</string>
+    <string name="carmodel">CardModel</string>
+    <string name="color">Color</string>
+    <string name="carregistrationnuber">Car Registration Number</string>
+    <string name="fueltype">FuelType</string>
+    <string name="dateofregistration">Date Of Registration</string>
+    <string name="driverregistration">Driver Registration</string>
+    <string name="vehile_regitration">Vechile Registration</string>
+    <string name="next">Next</string>
+    <string name="verifymobile">Verify Mobile</string>
+    <string name="enterotpsent">Enter Otp Sent To</string>
+    <string name="verifyotp">VerifyOtp</string>
+    <string name="resendotp">Resend Otp in</string>
+    <string name="time">timer</string>
+    <string name="setpin">Set Pin</string>
 </resources>

@@ -18,6 +18,24 @@
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right" />
 
+        <action
+            android:id="@+id/action_driver_details"
+            app:destination="@+id/nav_driver_registartion"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+
+        <action
+            android:id="@+id/action_vechile_registration"
+            app:destination="@+id/nav_vechile_registartion"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+
     </fragment>
     <fragment
         android:id="@+id/signup"
@@ -27,8 +45,24 @@
         app:exitAnim="@anim/slide_out_left"
         app:popEnterAnim="@anim/slide_in_left"
         app:popExitAnim="@anim/slide_out_right"
-        tools:layout="@layout/signup_fragment">
-    </fragment>
-
+        tools:layout="@layout/signup_fragment" />
+    <fragment
+        android:id="@+id/nav_driver_registartion"
+        android:name="com.metataxidriver.ui.fragment.DriverRegistrationFragment"
+        android:label="@string/driverregistration"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right"
+        tools:layout="@layout/driver_details_rigistrationfragment" />
+    <fragment
+        android:id="@+id/nav_vechile_registartion"
+        android:name="com.metataxidriver.ui.fragment.VechileRegistrationFragment"
+        android:label="@string/vehile_regitration"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right"
+        tools:layout="@layout/vehile_registration_fragment" />
 
 </navigation>
