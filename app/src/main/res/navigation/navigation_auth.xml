@@ -36,6 +36,13 @@
             app:popExitAnim="@anim/slide_out_right" />
 
 
+        <action
+            android:id="@+id/action_vechile_enter_pin"
+            app:destination="@+id/nav_setpin"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/signup"
@@ -64,5 +71,15 @@
         app:popEnterAnim="@anim/slide_in_left"
         app:popExitAnim="@anim/slide_out_right"
         tools:layout="@layout/vehile_registration_fragment" />
+
+    <fragment
+        android:id="@+id/nav_setpin"
+        android:name="com.metataxidriver.ui.fragment.SetPinFragment"
+        android:label="@string/setpin"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right"
+        tools:layout="@layout/set_your_pin_fragment" />
 
 </navigation>

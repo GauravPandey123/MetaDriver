@@ -14,4 +14,6 @@ class AuthActivity : AppCompatActivity() {
         findNavController(R.id.auth_nav_host_fragment)
 
     }
+
+
 }

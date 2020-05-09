@@ -1,9 +1,6 @@
 package com.metataxidriver
 
-import com.metataxidriver.ui.fragment.DriverRegistrationFragment
-import com.metataxidriver.ui.fragment.LoginFragment
-import com.metataxidriver.ui.fragment.SignupFragment
-import com.metataxidriver.ui.fragment.VechileRegistrationFragment
+import com.metataxidriver.ui.fragment.*
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 
@@ -16,10 +13,13 @@ abstract class AuthFragmentBuildersModule {
     @ContributesAndroidInjector()
     abstract fun contributeLoginFragment(): LoginFragment
 
-    @ContributesAndroidInjector
+    @ContributesAndroidInjector()
     abstract fun contributeDriverDetailFragment(): DriverRegistrationFragment
 
-    @ContributesAndroidInjector
+    @ContributesAndroidInjector()
     abstract fun contibuterVechileDetailFragment() : VechileRegistrationFragment
+
+    @ContributesAndroidInjector()
+    abstract fun contributerSetYourPinFragment() : SetPinFragment
 
 }

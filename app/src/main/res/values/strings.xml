@@ -46,4 +46,5 @@
     <string name="resendotp">Resend Otp in</string>
     <string name="time">timer</string>
     <string name="setpin">Set Pin</string>
+    <string name="setyour">Set Your Four Digit Pin</string>
 </resources>

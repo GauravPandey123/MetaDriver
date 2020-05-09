@@ -8,11 +8,24 @@
         android:id="@+id/textviewSetPin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_20dp"
         android:text="@string/setpin"
         android:textColor="@color/text_color"
-        android:layout_margin="@dimen/_20dp"
-        app:layout_constraintTop_toTopOf="parent"
-        android:textSize="@dimen/font_24sp" />
+        android:textSize="@dimen/font_24sp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textViewSetYourFourDigitPin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20dp"
+        android:layout_marginLeft="@dimen/_20dp"
+        android:layout_marginTop="@dimen/_20dp"
+        android:text="@string/setyour"
+        android:textColor="@color/customerdatecolor"
+        android:textSize="@dimen/font_20sp"
+        app:layout_constraintTop_toBottomOf="@+id/textviewSetPin" />
 
     <LinearLayout
         android:id="@+id/linearLayoutOtp"
@@ -21,15 +34,15 @@
         android:layout_marginTop="@dimen/_40dp"
         android:layout_marginBottom="@dimen/_40dp"
         android:gravity="center"
-        app:layout_constraintTop_toBottomOf="@+id/textviewSetPin"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSetYourFourDigitPin">
+
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/otp_first_char"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_margin="5dp"
-            android:background="@drawable/grey_rectangle"
             android:inputType="number" />
 
         <com.google.android.material.textfield.TextInputEditText
@@ -37,7 +50,6 @@
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_margin="5dp"
-            android:background="@drawable/grey_rectangle"
             android:inputType="number" />
 
         <com.google.android.material.textfield.TextInputEditText
@@ -45,7 +57,6 @@
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_margin="5dp"
-            android:background="@drawable/grey_rectangle"
             android:inputType="number" />
 
         <com.google.android.material.textfield.TextInputEditText
@@ -53,8 +64,22 @@
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_margin="5dp"
-            android:background="@drawable/grey_rectangle"
             android:inputType="number" />
 
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewSetPinNext"
+        android:layout_width="@dimen/_200dp"
+        android:layout_height="?actionBarSize"
+        android:layout_margin="@dimen/_40dp"
+        android:text="@string/next"
+        android:gravity="center"
+        android:textSize="@dimen/font_24sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutOtp"
+        android:background="@color/red"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
